@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Registration</title>
+    <style>
+        header {
+              background-color: yellow;
+              padding: 5px;
+              text-align: center;
+              font-size: 35px;
+              color: white;
+            }
+        big{
+            font-size:25px;
+            color:Highlight;
+        }
+        small{
+            font-size:15px;
+            color:antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <small><a href="./index.html">Home|</a></small>
+        <small><a href="./Films.html">|Films</a></small>
+        <small><a href="./Books.html">|Books</a></small>
+        <small><a href="./Music.html">|Music</a></small>
+        <small><a href="./UsefullLinks.html">|Usefull Links|</a></small>
+        <small><a href="./Contactme.html">|ContactMe|</a></small>
+		<big>Registration</big>
+
+    </header>
+    <section>
+        <center>	
+
+			<form><br>
+            Name:
+            <input type="text" name="username"><br><br>
+			
+			Surname:
+            <input type="text" name="username"><br><br>
+			
+			Date of birth:
+            <input type="text" name="birthdate"><br><br>
+			
+			E-mail:
+            <input type="text" name="email"><br><br>
+			
+			Password:
+            <input type="password" name="password"><br><br>
+			
+			Department:
+			<select>
+				  <option value="ceng">Computer Engineering</option>
+				  <option value="enm">Industrial Engineering</option>
+				  <option value="eem">Electric& Electronic Engineering</option>
+				  <option value="civil">Civil Engineering</option>
+				  <option value="chemical">Chemical Engineering</option>
+				  <option value="enviroment">Enviroment Engineering</option>
+				</select><br><br>
+			
+			Gender:
+            <select>
+				  <option value="male">Male</option>
+				  <option value="female">Female</option>
+				</select><br><br>
+			
+			About Me:
+            <textarea rows=5; cols=35; name="aboutme"></textarea><br><br>
+			
+			Upload your photo:
+            <input type="file" name="photo"><br><br>
+			
+			Interests:<br>
+            <input type="checkbox" name="1">Education    <br>
+			<input type="checkbox" name="2">Gaming    <br>
+			<input type="checkbox" name="3">Music    <br>
+			<input type="checkbox" name="4">Painting    <br>
+			<input type="checkbox" name="5">Taekwondo    <br>
+			<input type="checkbox" name="6">Freerunnig    <br>
+			<input type="checkbox" name="7">Collecting    <br>
+			<input type="checkbox" name="8">Fishing    <br>
+			<input type="checkbox" name="9">Lion Training    <br>
+			<input type="checkbox" name="10">Eating    <br>
+			
+			
+			
+			<br>
+            <input type="reset" name="reset">
+			<input type="submit" name="submit" value="Send" onclick="alert('Thanks for registration')"><br><br>
+
+        </center>
+    </section>
+</body>
+</html>
