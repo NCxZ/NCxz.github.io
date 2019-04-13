@@ -1,98 +1,228 @@
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title>Registration</title>
-    <style>
-        header {
-              background-color: yellow;
-              padding: 5px;
-              text-align: center;
-              font-size: 35px;
-              color: white;
-            }
-        big{
-            font-size:25px;
-            color:Highlight;
-        }
-        small{
-            font-size:15px;
-            color:antiquewhite;
-        }
-    </style>
+
+    <meta charset="utf-8">
+    <title>My Web Site</title>
+    <link href="./bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./bootstrap-4.3.1-dist/css/main-template.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <small><a href="./index.html">Home|</a></small>
-        <small><a href="./Films.html">|Films</a></small>
-        <small><a href="./Books.html">|Books</a></small>
-        <small><a href="./Music.html">|Music</a></small>
-        <small><a href="./UsefullLinks.html">|Usefull Links|</a></small>
-        <small><a href="./ContactMe.html">|ContactMe|</a></small>
-		<big>Registration</big>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #007bff !important;">
 
-    </header>
-    <section>
-        <center>	
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-			<form><br>
-            Name:
-            <input type="text" name="username"><br><br>
-			
-			Surname:
-            <input type="text" name="username"><br><br>
-			
-			Date of birth:
-            <input type="text" name="birthdate"><br><br>
-			
-			E-mail:
-            <input type="text" name="email"><br><br>
-			
-			Password:
-            <input type="password" name="password"><br><br>
-			
-			Department:
-			<select>
-				  <option value="ceng">Computer Engineering</option>
-				  <option value="enm">Industrial Engineering</option>
-				  <option value="eem">Electric& Electronic Engineering</option>
-				  <option value="civil">Civil Engineering</option>
-				  <option value="chemical">Chemical Engineering</option>
-				  <option value="enviroment">Enviroment Engineering</option>
-				</select><br><br>
-			
-			Gender:
-            <select>
-				  <option value="male">Male</option>
-				  <option value="female">Female</option>
-				</select><br><br>
-			
-			About Me:
-            <textarea rows=5; cols=35; name="aboutme"></textarea><br><br>
-			
-			Upload your photo:
-            <input type="file" name="photo"><br><br>
-			
-			Interests:<br>
-            <input type="checkbox" name="1">Education    <br>
-			<input type="checkbox" name="2">Gaming    <br>
-			<input type="checkbox" name="3">Music    <br>
-			<input type="checkbox" name="4">Painting    <br>
-			<input type="checkbox" name="5">Taekwondo    <br>
-			<input type="checkbox" name="6">Freerunnig    <br>
-			<input type="checkbox" name="7">Collecting    <br>
-			<input type="checkbox" name="8">Fishing    <br>
-			<input type="checkbox" name="9">Lion Training    <br>
-			<input type="checkbox" name="10">Eating    <br>
-			
-			
-			
-			<br>
-            <input type="reset" name="reset">
-			<input type="submit" name="submit" value="Send" onclick="alert('Thanks for registration')"><br><br>
+        <div class="collapse navbar-collapse" id="mynavbar">
 
-        </center>
-    </section>
+            <ul class="navbar-nav mr-outo">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./Films.html">Films</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./Books.html">Books</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./Music.html">Music</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./UsefullLinks.html">Usefull Links</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./ContactMe.html">Contact Me</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="./Registration.html">Registration</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container" role="main">
+        <main class="container" role="main">
+            <div class="main-template">
+                <center>
+
+                    <div class="col-md-8 order-md-1">
+                        <h4 class="mb-3">Registration</h4>
+                        <form class="needs-validation" novalidate>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName">First name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                    <div class="invalid-feedback">
+                                        Valid first name is required.
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName">Last name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                    <div class="invalid-feedback">
+                                        Valid last name is required.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="username">Username</label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">@</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                    <div class="invalid-feedback" style="width: 100%;">
+                                        Your username is required.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="passwrod">
+                                <div class="invalid-feedback">
+                                    Please enter a valid password.
+                                </div>
+
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                                <div class="invalid-feedback">
+                                    Please enter your address.
+                                </div>
+                            </div>
+                            <div class="row">
+
+
+                                <div class="col-md-5 mb-4">
+                                    <label for="department">Department</label>
+                                    <select class="custom-select d-block w-100" id="department" required>
+                                        <option value="">Choose...</option>
+                                        <option value="ceng">Computer Engineering</option>
+                                        <option value="enm">Industrial Engineering</option>
+                                        <option value="eem">Electric& Electronic Engineering</option>
+                                        <option value="civil">Civil Engineering</option>
+                                        <option value="chemical">Chemical Engineering</option>
+                                        <option value="enviroment">Enviroment Engineering</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a valid department.
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Date of Birth</label>
+                                        <input type="date" class="form-control" id="exampleInputDOB1" placeholder="Date of Birth">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 mb-3">
+                                    <label for="gender">Gender</label>
+                                    <select class="custom-select d-block w-100" id="state" required>
+                                        <option value="">Choose...</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid gender.
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mb-4" />
+
+                            <h4 class="mb-4">Interests</h4>
+                            <div class="row">
+                                <div class="col-sm" align="left">
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="painting">
+                                        <label class="custom-control-label" for="painting">Painting</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="gaming">
+                                        <label class="custom-control-label" for="gaming">Gaming</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="music">
+                                        <label class="custom-control-label" for="music">Music</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="education">
+                                        <label class="custom-control-label" for="education">Education</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="taekwondo">
+                                        <label class="custom-control-label" for="taekwondo">Taekwondo</label>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm" align="left">
+
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="freerunnig">
+                                        <label class="custom-control-label" for="freerunnig">Freerunnig</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="collecting">
+                                        <label class="custom-control-label" for="collecting">Collecting</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="fishing">
+                                        <label class="custom-control-label" for="fishing">Fishing</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="lion-training">
+                                        <label class="custom-control-label" for="lion-training">Lion Training</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="eating">
+                                        <label class="custom-control-label" for="eating">Eating</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <hr />
+                            About Me:
+                            <textarea rows=5; cols=35; name="aboutme"></textarea><br><br>
+
+                            Upload your photo:
+                            <input type="file" name="photo"><br>
+
+                            <br>
+                            <input type="reset" name="reset">
+                            <input type="submit" name="submit" value="Send" onclick="alert('Thanks for registration')">
+                        </form>
+                    </div>
+                </center>
+            </div>
+        </main>
+    </div>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="./bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 </html>
+
+

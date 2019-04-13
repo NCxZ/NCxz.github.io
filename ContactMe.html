@@ -1,61 +1,85 @@
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title>Contact Me</title>
-    <style>
-        header {
-              background-color: yellow;
-              padding: 5px;
-              text-align: center;
-              font-size: 35px;
-              color: white;
-            }
-        big{
-            font-size:25px;
-            color:Highlight;
-        }
-        small{
-            font-size:15px;
-            color:antiquewhite;
-        }
-    </style>
+
+    <meta charset="utf-8">
+    <title>My Web Site</title>
+    <link href="./bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./bootstrap-4.3.1-dist/css/main-template.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <small><a href="./index.html">Home|</a></small>
-        <small><a href="./Films.html">|Films</a></small>
-        <small><a href="./Books.html">|Books</a></small>
-        <small><a href="./Music.html">|Music</a></small>
-        <small><a href="./UsefullLinks.html">|Usefull Links|</a></small>
-		<big>ContactMe</big>
-        <small><a href="./Registration.html">|Registration</a></small>
-    </header>
-    <section>
-        <center><br><br>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #007bff !important;">
 
-			<form>
-            Name:
-            <input type="text" name="username"><br><br>
-            E-mail:
-			<input type="email" name="password"><br><br>
-			Phone:
-            <input type="tel" name="phone" maxlength="11"><br><br>
-			Issue:
-            <input type="text" name="issue"><br><br>
-			Message:
-            <textarea rows=5; cols=35; name="message"></textarea><br><br>
-			
-            <input type="submit" name="submit" value="Send" onclick="alert('Your message is sent')">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-			</form>
-			<br><br>
-			<a href="http://fb.com/quadrip" ><img src="fb.png" width="3%"></a>
-			<a href="https://www.youtube.com/channel/UCOHZG4ICWDiBhVC15QJHXdQ" ><img src="yt.png" width="3%"></a>
-			<a href="https://www.instagram.com/fatih.yildz" ><img src="ig.png" width="3%"></a> 
+        <div class="collapse navbar-collapse" id="mynavbar">
 
-        </center>
-    </section>
+            <ul class="navbar-nav mr-outo">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./Films.html">Films</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./Books.html">Books</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./Music.html">Music</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./UsefullLinks.html">Usefull Links</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="./ContactMe.html">Contact Me</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./Registration.html">Registration</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container" role="main">
+        <main class="container" role="main">
+            <div class="main-template">
+                <center>
+                    <form>
+                        Name:
+                        <input type="text" name="username"><br><br>
+                        E-mail:
+                        <input type="email" name="password"><br><br>
+                        Phone:
+                        <input type="tel" name="phone" maxlength="11"><br><br>
+                        Issue:
+                        <input type="text" name="issue"><br><br>
+                        Message:
+                        <textarea rows=5; cols=35; name="message"></textarea><br><br>
+
+                        <input type="submit" name="submit" value="Send" onclick="alert('Your message is sent')">
+                    </form>
+                    <br><br>
+                    <a href="http://fb.com/quadrip"><img src="fb.png" width="3%"></a>
+                    <a href="https://www.youtube.com/channel/UCOHZG4ICWDiBhVC15QJHXdQ"><img src="yt.png" width="3%"></a>
+                    <a href="https://www.instagram.com/fatih.yildz"><img src="ig.png" width="3%"></a>
+
+                </center>
+
+            </div>
+        </main>
+    </div>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="./bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 </html>

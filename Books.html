@@ -1,56 +1,120 @@
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title>Favorite Books</title>
-    <style>
-        header {
-              background-color: yellow;
-              padding: 5px;
-              text-align: center;
-              font-size: 35px;
-              color: white;
-            }
-        big{
-            font-size:25px;
-            color:Highlight;
-        }
-        small{
-            font-size:15px;
-            color:antiquewhite;
-        }
-    </style>
+
+    <meta charset="utf-8">
+    <title>My Web Site</title>
+    <link href="./bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./bootstrap-4.3.1-dist/css/main-template.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <small><a href="./index.html">Home|</a></small>
-        <small><a href="./Films.html">|Films|</a></small>
-		<big>Books</big>
-        <small><a href="./Music.html">|Music</a></small>
-        <small><a href="./UsefullLinks.html">|Usefull Links</a></small>
-        <small><a href="./ContactMe.html">|ContactMe</a></small>
-        <small><a href="./Registration.html">|Registration</a></small>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #007bff !important;">
 
-    </header>
-    <section>
-        <center>
-		
-		<h1>My favorite book is: Improbable by Adam Fawer:</h1>
-		<img src="./improbable.jpg" width="10%">
-		<p style="width:70%;"> Improbable is a 2005 science fiction thriller novel by Adam Fawer, about a gambler who gains the power to predict the future. It was awarded the 2006 International Thriller Writers Award for best first novel <br>	<a href="https://www.amazon.com/Improbable-Novel-Adam-Fawer/dp/006073678X">Details</a>
-		</p>
-		
-		<h1>Another book: The childer of Húrin by J.R.R. Tolkien</h1>
-		<img src="./hurin.jpg" width="10%">
-		<p style="width:70%;"> The Children of Húrin is an epic fantasy novel which forms the completion of a tale by J. R. R. Tolkien. He wrote the original version of the story in the late 1910s, revised it several times later, but did not complete it before his death in 1973. His son, Christopher Tolkien, edited the manuscripts to form a consistent narrative, and published it in 2007 as an independent work. The book contains 33 illustrations by Alan Lee, eight of which are full-page and in colour. <br>	<a href="http://www.wikizeroo.net/index.php?q=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvVGhlX0NoaWxkcmVuX29mX0glQzMlQkFyaW4">Details</a>
-		</p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar" aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-		<h1>A strange one: Fahrenheit 451 by Ray Bradbury</h1>
-		<img src="./fahrenheit.jpg" width="10%">
-		<p style="width:70%;">Fahrenheit 451 is a dystopian novel by American writer Ray Bradbury, first published in 1953. It is regarded as one of his best works. The novel presents a future American society where books are outlawed and "firemen" burn any that are found. <br>	<a href="https://www.dr.com.tr/kitap/fahrenheit-451/edebiyat/roman/bilim-kurgu/urunno=0001750151001">Details</a>
-		</p>
-        </center>
-    </section>
+        <div class="collapse navbar-collapse" id="mynavbar">
+
+            <ul class="navbar-nav mr-outo">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./Films.html">Films</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="./Books.html">Books</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./Music.html">Music</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./UsefullLinks.html">Usefull Links</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./ContactMe.html">Contact Me</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./Registration.html">Registration</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container" role="main">
+        <main class="container" role="main">
+            <div class="main-template">
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading"><span class="text-muted">My favorite book is:</span> Improbable by <br /> Adam Fawer</h2>
+                        <p class="lead">Improbable is a 2005 science fiction thriller novel by Adam Fawer, about a gambler who gains the power to predict the future. It was awarded the 2006 International Thriller Writers Award for best first novel</p>
+                        <p><a class="btn btn-secondary" style="background-color: #007bff !important;" href="https://www.amazon.com/Improbable-Novel-Adam-Fawer/dp/006073678X" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./improbable.jpg" width="50%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500">
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading"><span class="text-muted">Another book:</span> The childer of Húrin by <br /> J.R.R. Tolkien </h2>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                        <p><a class="btn btn-secondary" style="background-color: #007bff !important;" href="http://www.wikizeroo.net/index.php?q=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvVGhlX0NoaWxkcmVuX29mX0glQzMlQkFyaW4" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./hurin.jpg" width="50%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500">
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading"><span class="text-muted">A strange one:</span> Fahrenheit 451 by <br /> Ray Bradbury</h2>
+                        <p class="lead">Improbable is a 2005 science fiction thriller novel by Adam Fawer, about a gambler who gains the power to predict the future. It was awarded the 2006 International Thriller Writers Award for best first novel</p>
+                        <p><a class="btn btn-secondary" style="background-color: #007bff !important;" href="https://www.dr.com.tr/kitap/fahrenheit-451/edebiyat/roman/bilim-kurgu/urunno=0001750151001" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./fahrenheit.jpg" width="50%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500">
+                    </div>
+                </div>
+
+                <hr class="featurette-divider">
+
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2">
+                        <h2 class="featurette-heading"><span class="text-muted">Little conspiracy:</span> SynBio by <br /> Leslie Alan Horvitz</h2>
+                        <p class="lead">Scientists now have the capacity to hack into DNA the same way that hackers can infiltrate computer systems, manipulating organisms by inserting new DNA or exploiting genetic mutations that can trigger fatal heart attacks or induce bipolar illness  or Alzheimer’s.</p>
+                        <p><a class="btn btn-secondary" style="background-color: #007bff !important;" href="https://www.goodreads.com/book/show/18623858-synbio" role="button">View details &raquo;</a></p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="./synbio.jpg" width="50%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500">
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+
+            </div>
+        </main>
+    </div>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="./bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
 </html>
+
+
+
