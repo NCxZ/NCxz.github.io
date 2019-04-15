@@ -204,14 +204,15 @@
                             </div>
                             <hr />
                             About Me:
-                            <textarea rows=5; cols=35; name="aboutme"></textarea><br><br>
+                            <textarea class="form-control" rows="3" cols="35" name="aboutme"></textarea><br><br>
 
                             Upload your photo:
-                            <input type="file" name="photo"><br>
+                            <input type="file" class="form-control-file" name="photo"><br>
 
                             <br>
-                            <input type="reset" name="reset">
-                            <input type="submit" name="submit" value="Send" onclick="alert('Thanks for registration')">
+                            <button type="reset" class="btn btn-success">Reset</button>
+                            <button type="button" class="btn btn-success" onclick="alert('Thanks for registration')">Send</button>
+                            <hr class="mb-4" />
                         </form>
                     </div>
                 </center>
